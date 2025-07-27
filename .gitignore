@@ -1,0 +1,15 @@
+# Eclipse config files
+.project
+.classpath
+.settings/
+
+# Binários compilados
+bin/
+*.class
+
+# Arquivos de log
+*.log
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
