@@ -7,4 +7,9 @@ public class Conta {
 	private int refrigerantes;
 	private int espetinhos;
 
+	public double consumo() {
+		return cervejas + refrigerantes + espetinhos;
+	}
+	
+	
 }
