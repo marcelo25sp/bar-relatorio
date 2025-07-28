@@ -28,6 +28,12 @@ public class Main {
 		System.out.println("----------");
 		
 		System.out.printf("Consumo: R$ %.2f%n", conta.consumo());
+		System.out.printf("Couvert: R$ %.2f%n", conta.couvert());
+		System.out.printf("Ingresso: R$ %.2f%n", conta.ingresso());
+		
+		System.out.println();
+		
+		System.out.printf("Valor Total a Pagar: R$ %.2f%n", conta.valorTotal());
 
 		sc.close();
 
