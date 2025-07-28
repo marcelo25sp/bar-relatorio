@@ -27,4 +27,8 @@ public class Conta {
 		}
 	}
 
+	public double valorTotal() {
+		return consumo() + couvert() + ingresso();
+	}
+
 }
