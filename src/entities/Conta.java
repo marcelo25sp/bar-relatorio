@@ -19,4 +19,12 @@ public class Conta {
 		}
 	}
 
+	public double ingresso() {
+		if (genero == 'M') {
+			return 10.0;
+		} else {
+			return 8.0;
+		}
+	}
+
 }
