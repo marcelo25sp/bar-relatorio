@@ -8,7 +8,7 @@ public class Conta {
 	public int espetinhos;
 
 	public double consumo() {
-		return cervejas + refrigerantes + espetinhos;
+		return (cervejas * 5.0) + (refrigerantes * 3.0) + (espetinhos * 7.0);
 	}
 
 	public double couvert() {

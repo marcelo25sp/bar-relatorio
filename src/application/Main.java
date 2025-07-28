@@ -22,6 +22,12 @@ public class Main {
 		conta.refrigerantes = sc.nextInt();
 		System.out.print("Quantidade de espetinhos: ");
 		conta.espetinhos = sc.nextInt();
+		
+		System.out.println();
+		System.out.println("RELATÓRIO:");
+		System.out.println("----------");
+		
+		System.out.printf("Consumo: R$ %.2f%n", conta.consumo());
 
 		sc.close();
 
