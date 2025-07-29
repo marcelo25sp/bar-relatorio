@@ -22,17 +22,23 @@ public class Main {
 		conta.refrigerantes = sc.nextInt();
 		System.out.print("Quantidade de espetinhos: ");
 		conta.espetinhos = sc.nextInt();
-		
+
 		System.out.println();
 		System.out.println("RELATÓRIO:");
 		System.out.println("----------");
-		
+
 		System.out.printf("Consumo: R$ %.2f%n", conta.consumo());
-		System.out.printf("Couvert: R$ %.2f%n", conta.couvert());
+
+		if (conta.couvert() == 0.0) {
+			System.out.println("Isento de couvert...");
+		} else {
+			System.out.printf("Couvert: R$ %.2f%n", conta.couvert());
+		}
+		
 		System.out.printf("Ingresso: R$ %.2f%n", conta.ingresso());
-		
+
 		System.out.println();
-		
+
 		System.out.printf("Valor Total a Pagar: R$ %.2f%n", conta.valorTotal());
 
 		sc.close();
