@@ -24,11 +24,12 @@ public class Main {
 										// vez de vírgula)
 		Scanner sc = new Scanner(System.in);
 
+		// cria o objeto Conta que armazena os dados do cliente
 		Conta conta = new Conta();
 
 		// entrada de dados do usuário para a impressão do relatório(conta)
 		System.out.print("Genero: ");
-		conta.genero = Character.toUpperCase(sc.next().charAt(0));
+		conta.genero = Character.toUpperCase(sc.next().charAt(0)); // Converte para maiúsculo para evitar erro em 'f' ou 'm'
 		System.out.print("Quantidade de cervejas: ");
 		conta.cervejas = sc.nextInt();
 		System.out.print("Quantidade de refrigerantes: ");
@@ -36,21 +37,28 @@ public class Main {
 		System.out.print("Quantidade de espetinhos: ");
 		conta.espetinhos = sc.nextInt();
 
+		// geração do relatório
 		System.out.println();
 		System.out.println("RELATÓRIO:");
 		System.out.println("----------------------------------");
 		System.out.println("----------------------------------");
 
+		// exibe o valor do consumo total
 		System.out.printf("Consumo: R$ %.2f%n", conta.consumo());
 
+		// exibe o valor cobrado do couvert(caso o consumo seja maior que R$ 30.00)
 		if (conta.couvert() == 0.0) {
 			System.out.println("Isento de couvert...");
 		} else {
 			System.out.printf("Couvert: R$ %.2f%n", conta.couvert());
 		}
 
+		// exibe o valor do ingresso (diferente para homem e mulher)
 		System.out.printf("Ingresso: R$ %.2f%n", conta.ingresso());
+		
 		System.out.println();
+		
+		//exibe o valor final da conta
 		System.out.printf("Valor Total a Pagar: R$ %.2f%n", conta.valorTotal());
 
 		sc.close();
