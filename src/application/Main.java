@@ -15,7 +15,7 @@ public class Main {
 		Conta conta = new Conta();
 
 		System.out.print("Genero: ");
-		conta.genero = sc.next().charAt(0);
+		conta.genero = Character.toUpperCase(sc.next().charAt(0));
 		System.out.print("Quantidade de cervejas: ");
 		conta.cervejas = sc.nextInt();
 		System.out.print("Quantidade de refrigerantes: ");
