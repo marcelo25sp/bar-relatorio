@@ -24,18 +24,19 @@ public class Main {
 										// vez de vírgula)
 		Scanner sc = new Scanner(System.in);
 
-		// cria o objeto Conta que armazena os dados do cliente
-		Conta conta = new Conta();
+		
 
 		// entrada de dados do usuário para a impressão do relatório(conta)
 		System.out.print("Genero: ");
-		conta.genero = Character.toUpperCase(sc.next().charAt(0)); // Converte para maiúsculo para evitar erro em 'f' ou 'm'
+		char genero = Character.toUpperCase(sc.next().charAt(0)); // Converte para maiúsculo para evitar erro em 'f' ou 'm'
 		System.out.print("Quantidade de cervejas: ");
-		conta.cervejas = sc.nextInt();
+		int cervejas = sc.nextInt();
 		System.out.print("Quantidade de refrigerantes: ");
-		conta.refrigerantes = sc.nextInt();
+		int refrigerantes = sc.nextInt();
 		System.out.print("Quantidade de espetinhos: ");
-		conta.espetinhos = sc.nextInt();
+		int espetinhos = sc.nextInt();
+		// cria o objeto Conta que armazena os dados do cliente acessando os atributos da classe Conta
+		Conta conta = new Conta(genero, cervejas, refrigerantes, espetinhos);
 
 		// geração do relatório
 		System.out.println();
