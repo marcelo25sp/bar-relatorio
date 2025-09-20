@@ -1,28 +1,43 @@
 # Desafio - Cálculo de Conta em um Bar 🍻
 
-Este projeto Java simula o cálculo de uma conta em um bar, considerando:
-- Gênero do cliente (M/F)
-- Quantidade de cervejas, refrigerantes e espetinhos
-- Isenção de couvert se o consumo for maior que R$ 30,00
+Este projeto Java simula o cálculo de uma conta em um bar, considerando as regras de negócio abaixo:
 
-## 💻 Tecnologias utilizadas
-- Java 17
-- Eclipse IDE
-
-## 📄 Lógica aplicada
-- Cerveja: R$ 5,00
-- Refrigerante: R$ 3,00
-- Espetinho: R$ 7,00
-- Ingresso: R$ 10,00 (homem) / R$ 8,00 (mulher)
-- Couvert artístico: R$ 4,00 (isento se consumo > R$ 30,00)
-
-## 📦 Estrutura
-- `Main.java`: classe principal com entrada e saída de dados
-- `Conta.java`: classe com métodos de cálculo e regras de negócio
+- Gênero do cliente (M/F) para definir o valor do ingresso  
+- Quantidade de cervejas, refrigerantes e espetinhos  
+- Isenção de couvert artístico se o consumo for maior que R$ 30,00  
 
 ---
 
-### ✅ Exemplo de execução
+## 💻 Tecnologias utilizadas
+- Java 17  
+- Eclipse IDE  
+
+---
+
+## 📄 Lógica aplicada
+- **Cerveja:** R$ 5,00  
+- **Refrigerante:** R$ 3,00  
+- **Espetinho:** R$ 7,00  
+- **Ingresso:** R$ 10,00 (homem) / R$ 8,00 (mulher)  
+- **Couvert artístico:** R$ 4,00 (isento se consumo > R$ 30,00)  
+
+---
+
+## 📦 Estrutura
+- **Main.java**: classe principal, responsável pela entrada de dados e geração do relatório  
+- **Conta.java**: classe que centraliza as regras de negócio (consumo, couvert, ingresso e valor total), com encapsulamento e construtor  
+
+---
+
+## 📌 Próximos passos (melhorias futuras)
+- Refatorar gênero para usar **enumeração** em vez de `char`  
+- Criar testes unitários para validar os cálculos  
+- Melhorar a exibição do relatório com método `exibirInfo()` dentro da classe `Conta`  
+
+---
+
+
+## ✅ Exemplo de execução
 
 ```bash
 Genero: M
@@ -36,3 +51,5 @@ Isento de couvert...
 Ingresso: R$ 10.00
 
 Valor Total a Pagar: R$ 41.00
+
+
