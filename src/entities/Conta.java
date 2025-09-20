@@ -6,6 +6,13 @@ public class Conta {
 	private int cervejas;
 	private int refrigerantes;
 	private int espetinhos;
+		
+	public Conta(char genero, int cervejas, int refrigerantes, int espetinhos) {
+		this.genero = genero;
+		this.cervejas = cervejas;
+		this.refrigerantes = refrigerantes;
+		this.espetinhos = espetinhos;
+	}
 
 	public double consumo() {
 		return (cervejas * 5.0) + (refrigerantes * 3.0) + (espetinhos * 7.0);
