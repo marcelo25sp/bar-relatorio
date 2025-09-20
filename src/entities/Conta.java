@@ -2,13 +2,29 @@ package entities;
 
 public class Conta {
 
-	public char genero;
-	public int cervejas;
-	public int refrigerantes;
-	public int espetinhos;
+	private char genero;
+	private int cervejas;
+	private int refrigerantes;
+	private int espetinhos;
 
 	public double consumo() {
 		return (cervejas * 5.0) + (refrigerantes * 3.0) + (espetinhos * 7.0);
+	}
+
+	public char getGenero() {
+		return genero;
+	}
+
+	public int getCervejas() {
+		return cervejas;
+	}
+
+	public int getRefrigerantes() {
+		return refrigerantes;
+	}
+
+	public int getEspetinhos() {
+		return espetinhos;
 	}
 
 	public double couvert() {
